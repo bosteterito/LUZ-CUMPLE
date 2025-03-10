@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Feliz Cumpleaños Luz Mary</title>
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes glow {
+            0% { box-shadow: 0 0 10px #e75480; }
+            50% { box-shadow: 0 0 20px #e75480; }
+            100% { box-shadow: 0 0 10px #e75480; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f8e8ee;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: auto;
+        }
+
+        .card {
+            width: 85%;
+            max-width: 900px;
+            background: #fff;
+            border-radius: 20px;
+            padding: 50px;
+            text-align: center;
+            animation: fadeInUp 1s ease-out, glow 2s infinite alternate;
+            border: 5px solid #e75480;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            color: #e75480;
+            font-size: 3rem;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            animation: heartbeat 2s infinite ease-in-out;
+        }
+
+        .image-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            justify-content: center;
+            margin: 20px 0;
+            padding: 0 20px;
+        }
+
+        .image-container img {
+            width: 200px; /* Ancho ajustado */
+            height: 300px; /* Altura aumentada */
+            object-fit: cover; /* Ajusta las imágenes sin distorsión */
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            border: 3px solid #e75480;
+            animation: fadeIn 1s ease-in-out;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+
+        .date {
+            font-size: 1.3rem;
+            color: #555;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            line-height: 1.8;
+            font-size: 1.2rem;
+            color: #333;
+            text-align: justify;
+        }
+
+        .signature {
+            font-style: italic;
+            font-size: 1.5rem;
+            color: #e75480;
+            margin-top: 50px;
+            text-align: right;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>¡Feliz Cumpleaños, Luz Mary!</h1>
+        
+        <div class="image-container">
+          <!-- Asegúrate de que las imágenes existan en tu directorio -->
+          <img src="imagen.jpg" alt="Imagen de cumpleaños">
+          <img src="imagen4.jpeg" alt="Imagen de cumpleaños">
+          <img src="imagen5.jpeg" alt="Imagen de cumpleaños">
+          <img src="imagen6.jpeg" alt="Imagen de cumpleaños">
+          <img src="imagen7.jpeg" alt="Imagen de cumpleaños">
+          <img src="imagen8.jpeg" alt="Imagen de cumpleaños">
+        </div>
+        
+        <div class="date">En este día tan especial de tus 30 años...</div>
+        
+        <div class="content">
+            <p>Querida Luz Mary,</p>
+            <p>En este día tan especial de tus treinta años, quiero recordarte lo increíble que eres. Desde el primer momento que nos conocimos, supe que había encontrado a alguien verdaderamente especial.</p>
+            <p>Recuerdo aquella vez cuando conicidimos en ese paseo. Ese momento siempre me hace sonreír y me recuerda lo afortunado que soy de tenerte en mi vida.</p>
+            <p>Te deseo un cumpleaños lleno de alegría, sorpresas y momentos inolvidables. Espero que encuentres felicidad en cada nuevo día y que todos tus sueños se hagan realidad.</p>
+            <p>Tu amistad es un regalo invaluable; me inspiras a ser mejor y a seguir mis propios sueños. Celebro no solo tu nacimiento, sino la maravillosa persona que eres: fuerte, valiente y cariñosa.</p>
+            <p>Gracias por ser parte de mi vida y permitirme compartir momentos contigo. Estoy emocionado por todos los recuerdos que aún nos quedan por crear juntos.</p>
+            <p>Con todo mi amor,<br>JHON</p>
+        </div>
+        
+
+        <div class="signature">
+          Con todo mi amor,<br>
+          JHON
+        </div>
+    </div>
+</body>
+</html>
